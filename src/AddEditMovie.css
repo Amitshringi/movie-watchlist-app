@@ -1,0 +1,28 @@
+
+.add-edit-movie {
+    max-width: 600px;
+    margin: 2em auto;
+  }
+  
+  .add-edit-movie form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-edit-movie form input,
+  .add-edit-movie form textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .add-edit-movie form button {
+    padding: 0.5em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

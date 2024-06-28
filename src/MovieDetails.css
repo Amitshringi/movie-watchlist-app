@@ -1,0 +1,47 @@
+.movieDetails {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movieDetails h2 {
+    margin-bottom: 20px;
+  }
+  
+  .movieDetails p {
+    margin-bottom: 10px;
+  }
+  
+  .movieDetails button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .movieDetails button:hover {
+    background: #0056b3;
+  }
+  
+  .movieDetails a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .movieDetails a:hover {
+    background: #218838;
+  }
+  
