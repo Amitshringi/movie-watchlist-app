@@ -43,7 +43,7 @@ const MovieDetails = () => {
     <div className='details-container'>
       <div className='details-card'>
         <h2>{movie.title}</h2>
-        <img src={`http://localhost:5000/${movie.imageUrl}`} alt={movie.title} />
+        <img src={`https://movie-watchlist-app-backend.onrender.com/${movie.imageUrl}`} alt={movie.title} />
         <p><b>Description:</b> &nbsp;&nbsp;{movie.description}</p>
         <p><b>Released:</b>&nbsp;&nbsp; {movie.releaseYear}</p>
         <p><b>Genre:</b>&nbsp;&nbsp; {movie.genre}</p>

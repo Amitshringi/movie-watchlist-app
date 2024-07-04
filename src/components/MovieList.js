@@ -25,7 +25,7 @@ const MovieList = () => {
       {movies.map(movie => (
         <div className="movie-card" key={movie._id}>
           {movie.imageUrl && (
-            <img src={`http://localhost:5000/${movie.imageUrl}`} alt={movie.title} />
+            <img src={`https://movie-watchlist-app-backend.onrender.com/${movie.imageUrl}`} alt={movie.title} />
           )}
           <div className="movie-details">
             <h3 className='title'>{movie.title}</h3>
