@@ -12,8 +12,8 @@ const MovieList = () => {
     dispatch(fetchMovies());
   }, [dispatch]);
 
-  const handleToggleWatched = (id, watched) => {
-    dispatch(toggleWatchedStatus(id, watched));
+  const handleToggleWatched = (id) => {
+    dispatch(toggleWatchedStatus(id));
   };
 
   if (!movies || movies.length === 0) {
@@ -21,16 +21,25 @@ const MovieList = () => {
   }
 
   return (
-    <div className="movie-list">
+    <div className="main">
       {movies.map(movie => (
-        <div key={movie._id} className="movie-item">
-          <h3> Title: {movie.title}</h3>
-          <p>Description: {movie.description}</p>
-          <button onClick={() => handleToggleWatched(movie._id, !movie.watched)}
-            className={movie.watched? "Unwatched":"Watched"}>
-            {movie.watched ? ' Unwatched' : ' Watched'}
-          </button>
-          <Link to={`/details/${movie._id}`} className='detail-btn'>Details</Link>
+        <div className="movie-card" key={movie._id}>
+          {movie.imageUrl && (
+            <img src={`http://localhost:5000/${movie.imageUrl}`} alt={movie.title} />
+          )}
+          <div className="movie-details">
+            <h3 className='title'>{movie.title}</h3>
+            <p>{movie.description}</p>
+            <button
+              onClick={() => handleToggleWatched(movie._id)}
+              className={movie.watched ? 'unwatched' : 'watched'}
+            >
+              {movie.watched ? 'Unwatched' : 'Watched'}
+            </button>
+            <button className='detail-btn'>
+              <Link to={`/details/${movie._id}`}>Details</Link>
+            </button>
+          </div>
         </div>
       ))}
     </div>

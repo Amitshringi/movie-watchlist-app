@@ -1,26 +1,26 @@
 .navbar {
-    height: 70px;
+    height: 60px;
 	background: linear-gradient(170deg, #1bc059, #0d47a1);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+  padding: 10px 20px;
 	position:relative
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+  list-style: none;
+  display: flex;
 }
 
 .nav-link {
-    font-size: 30px;
-    color: #fff;
-    font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    margin-left: 20px ;
-    &:hover{color:#0f0};
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+.nav-link:hover {
+  background-color: #0f0;
+  border-radius: 5px;
 }
 
 nav {

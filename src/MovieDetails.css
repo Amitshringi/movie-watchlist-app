@@ -1,47 +1,98 @@
-.movieDetails {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+.details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 15%;
+ 
+}
+
+.details-card {
+  max-width: 600px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 50px;
+}
+
+.details-card img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.details-card h2 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+.details-card p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  text-align: left;
+}
+.details-card div {
+  display: flex;
+}
+
+.details-card label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.details-card input[type='number'],
+.details-card textarea {
+  width: calc(70% - 16px); /* Adjust for padding */
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-left: 20px;
   
-  .movieDetails h2 {
-    margin-bottom: 20px;
-  }
-  
-  .movieDetails p {
-    margin-bottom: 10px;
-  }
-  
-  .movieDetails button {
-    margin-right: 10px;
-    padding: 10px 20px;
-    border: none;
-    background: #007bff;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .movieDetails button:hover {
-    background: #0056b3;
-  }
-  
-  .movieDetails a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background: #28a745;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .movieDetails a:hover {
-    background: #218838;
-  }
-  
+}
+.details-card input[type='number'] {
+  width: 50px;
+  margin-left: 20px;
+
+}
+
+.details-card button {
+  padding: 8px 16px;
+  margin: 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.details-card button:hover {
+  background-color: #0056b3;
+}
+
+.details-card button.delete-btn {
+  background-color: #dc3545;
+}
+
+.details-card button.delete-btn:hover {
+  background-color: #c82333;
+}
+.details-card button.edit-btn{
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+
+}
+.details-card .back-btn{
+  margin: 10px;
+  /* text-decoration: none; */
+
+
+}
